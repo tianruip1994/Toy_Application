@@ -1,0 +1,250 @@
+Report
+======
+3439 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |20     |20         |=          |35.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |126    |126        |=          |80.95       |8.73     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |500    |0          |+500.00    |85.40       |27.40    |
++---------+-------+-----------+-----------+------------+---------+
+|function |60     |0          |+60.00     |50.00       |5.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    numpy (pyspark.mllib.tests,pyspark.mllib.stat.KernelDensity,pyspark.mllib.util,pyspark.mllib.classification,pyspark.mllib.regression,pyspark.mllib.clustering,pyspark.mllib.linalg,pyspark.mllib,pyspark.mllib.fpm)
+      \-random (pyspark.mllib.tests,pyspark.mllib.clustering)
+    pyspark (pyspark.mllib.tests,pyspark.mllib.linalg.distributed,pyspark.mllib.util,pyspark.mllib.tree,pyspark.mllib.random,pyspark.mllib.classification,pyspark.mllib.regression,pyspark.mllib.evaluation,pyspark.mllib.common,pyspark.mllib.clustering,pyspark.mllib.linalg,pyspark.mllib.recommendation,pyspark.mllib.feature,pyspark.mllib.fpm)
+      \-ml
+      | \-linalg (pyspark.mllib.tests,pyspark.mllib.linalg)
+      \-mllib
+      | \-classification (pyspark.mllib.tests,pyspark.mllib.regression)
+      | \-clustering (pyspark.mllib.tests)
+      | \-common (pyspark.mllib.tests,pyspark.mllib.stat._statistics,pyspark.mllib.stat.KernelDensity,pyspark.mllib.linalg.distributed,pyspark.mllib.util,pyspark.mllib.tree,pyspark.mllib.random,pyspark.mllib.classification,pyspark.mllib.regression,pyspark.mllib.evaluation,pyspark.mllib.feature,pyspark.mllib.clustering,pyspark.mllib.stat.test,pyspark.mllib.recommendation,pyspark.mllib.fpm)
+      | \-feature (pyspark.mllib.tests)
+      | \-linalg (pyspark.mllib.tests,pyspark.mllib.util,pyspark.mllib.linalg.distributed,pyspark.mllib.classification,pyspark.mllib.regression,pyspark.mllib.clustering,pyspark.mllib.stat._statistics,pyspark.mllib.feature,pyspark.mllib.tree)
+      | \-random (pyspark.mllib.tests)
+      | \-recommendation (pyspark.mllib.tests)
+      | \-regression (pyspark.mllib.tests,pyspark.mllib.util,pyspark.mllib.classification,pyspark.mllib.feature,pyspark.mllib.clustering,pyspark.mllib.stat._statistics,pyspark.mllib.tree)
+      | \-stat (pyspark.mllib.tests,pyspark.mllib.linalg.distributed)
+      | | \-KernelDensity (pyspark.mllib.stat)
+      | | \-distribution (pyspark.mllib.stat,pyspark.mllib.clustering)
+      | | \-test (pyspark.mllib.stat._statistics,pyspark.mllib.stat)
+      | \-tree (pyspark.mllib.tests)
+      | \-util (pyspark.mllib.tests,pyspark.mllib.tree,pyspark.mllib.classification,pyspark.mllib.regression,pyspark.mllib.feature,pyspark.mllib.clustering,pyspark.mllib.recommendation,pyspark.mllib.fpm)
+      \-rdd (pyspark.mllib.stat.KernelDensity,pyspark.mllib.stat._statistics,pyspark.mllib.feature,pyspark.mllib.clustering,pyspark.mllib.recommendation,pyspark.mllib.fpm)
+      \-serializers (pyspark.mllib.tests,pyspark.mllib.common)
+      \-sql (pyspark.mllib.tests,pyspark.mllib.util,pyspark.mllib.linalg.distributed,pyspark.mllib.random,pyspark.mllib.classification,pyspark.mllib.regression,pyspark.mllib.evaluation,pyspark.mllib.common,pyspark.mllib.tree,pyspark.mllib.stat._statistics,pyspark.mllib.recommendation,pyspark.mllib.feature,pyspark.mllib.fpm)
+      | \-types (pyspark.mllib.linalg,pyspark.mllib.evaluation)
+      | \-utils (pyspark.mllib.tests)
+      \-storagelevel (pyspark.mllib.linalg.distributed)
+      \-streaming (pyspark.mllib.classification,pyspark.mllib.tests,pyspark.mllib.clustering)
+        \-dstream (pyspark.mllib.regression)
+    scipy
+      \-sparse (pyspark.mllib.tests,pyspark.mllib.linalg)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |4347   |38.93 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |5257   |47.08 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |458    |4.10  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |1104   |9.89  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |212   |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |1.903 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |884    |74       |+810.00    |
++-----------+-------+---------+-----------+
+|refactor   |90     |5        |+85.00     |
++-----------+-------+---------+-----------+
+|warning    |240    |0        |+240.00    |
++-----------+-------+---------+-----------+
+|error      |46     |2        |+44.00     |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++---------------------------------+------+--------+---------+-----------+
+|module                           |error |warning |refactor |convention |
++=================================+======+========+=========+===========+
+|pyspark.mllib.linalg.__init__    |32.61 |3.75    |3.33     |9.73       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.tests              |17.39 |24.58   |11.11    |29.30      |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.stat._statistics   |17.39 |0.83    |0.00     |3.05       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.clustering         |10.87 |12.08   |10.00    |8.94       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.common             |8.70  |5.42    |1.11     |2.60       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.regression         |4.35  |10.00   |8.89     |4.98       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.util               |4.35  |4.58    |6.67     |4.41       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.feature            |2.17  |5.83    |7.78     |5.88       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.linalg.distributed |2.17  |5.83    |3.33     |4.98       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.classification     |0.00  |8.75    |10.00    |5.32       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.evaluation         |0.00  |6.67    |0.00     |4.07       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.random             |0.00  |5.42    |6.67     |6.00       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.fpm                |0.00  |2.50    |2.22     |1.02       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.tree               |0.00  |1.25    |10.00    |7.13       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.recommendation     |0.00  |1.25    |2.22     |1.13       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.stat.__init__      |0.00  |0.83    |16.67    |0.00       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.stat.KernelDensity |0.00  |0.42    |0.00     |0.79       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.stat.test          |0.00  |0.00    |0.00     |0.45       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib.stat.distribution  |0.00  |0.00    |0.00     |0.11       |
++---------------------------------+------+--------+---------+-----------+
+|pyspark.mllib                    |0.00  |0.00    |0.00     |0.11       |
++---------------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------------+------------+
+|message id                    |occurrences |
++==============================+============+
+|invalid-name                  |656         |
++------------------------------+------------+
+|missing-docstring             |140         |
++------------------------------+------------+
+|protected-access              |104         |
++------------------------------+------------+
+|wrong-import-position         |68          |
++------------------------------+------------+
+|too-many-arguments            |33          |
++------------------------------+------------+
+|no-member                     |33          |
++------------------------------+------------+
+|too-few-public-methods        |29          |
++------------------------------+------------+
+|unused-import                 |23          |
++------------------------------+------------+
+|unused-wildcard-import        |22          |
++------------------------------+------------+
+|redefined-builtin             |21          |
++------------------------------+------------+
+|anomalous-backslash-in-string |17          |
++------------------------------+------------+
+|unused-variable               |16          |
++------------------------------+------------+
+|unnecessary-lambda            |14          |
++------------------------------+------------+
+|duplicate-code                |12          |
++------------------------------+------------+
+|import-error                  |8           |
++------------------------------+------------+
+|import-self                   |7           |
++------------------------------+------------+
+|unidiomatic-typecheck         |6           |
++------------------------------+------------+
+|redefined-variable-type       |5           |
++------------------------------+------------+
+|wrong-import-order            |4           |
++------------------------------+------------+
+|too-many-lines                |4           |
++------------------------------+------------+
+|too-many-locals               |3           |
++------------------------------+------------+
+|superfluous-parens            |3           |
++------------------------------+------------+
+|deprecated-lambda             |3           |
++------------------------------+------------+
+|cyclic-import                 |3           |
++------------------------------+------------+
+|bare-except                   |3           |
++------------------------------+------------+
+|wildcard-import               |2           |
++------------------------------+------------+
+|unused-argument               |2           |
++------------------------------+------------+
+|reimported                    |2           |
++------------------------------+------------+
+|redefined-outer-name          |2           |
++------------------------------+------------+
+|no-self-use                   |2           |
++------------------------------+------------+
+|fixme                         |2           |
++------------------------------+------------+
+|ungrouped-imports             |1           |
++------------------------------+------------+
+|undefined-variable            |1           |
++------------------------------+------------+
+|too-many-statements           |1           |
++------------------------------+------------+
+|too-many-branches             |1           |
++------------------------------+------------+
+|too-many-ancestors            |1           |
++------------------------------+------------+
+|raising-bad-type              |1           |
++------------------------------+------------+
+|notimplemented-raised         |1           |
++------------------------------+------------+
+|no-self-argument              |1           |
++------------------------------+------------+
+|invalid-length-returned       |1           |
++------------------------------+------------+
+|consider-using-enumerate      |1           |
++------------------------------+------------+
+|bad-classmethod-argument      |1           |
++------------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 5.80/10
